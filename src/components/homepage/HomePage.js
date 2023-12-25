@@ -2,6 +2,8 @@ import "./HomePage.css";
 import About from "../AboutMe/About";
 import Projects from "../Projects/Projects";
 import cat from "../../images/cat.jpg";
+import downchevron from "../../images/down-chevron.png";
+import ContactMe from "../ContactMe/ContactMe";
 
 const HomePage = () => {
   const nextPage = () => {
@@ -19,10 +21,12 @@ const HomePage = () => {
         <img src={cat} />
         <div className="img-div">
           <button onClick={nextPage}>Next</button>
+          {/* <img src={downchevron} /> */}
         </div>
       </div>
       <About />
       <Projects />
+      <ContactMe />
     </div>
   );
 };
