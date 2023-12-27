@@ -6,3 +6,15 @@
 .App button {
   cursor: pointer;
 }
+
+.App .next-back-btn {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+}

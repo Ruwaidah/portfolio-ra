@@ -21,8 +21,12 @@ const Projects = () => {
       style={{ position: "absolute", top: window.innerHeight * 2 }}
     >
       <h2>Projects</h2>
-      <button onClick={back}>Back</button>
-      <button onClick={next}>Next</button>
+      <button className="next-back-btn" onClick={back}>
+        Back
+      </button>
+      <button className="next-back-btn" onClick={next}>
+        Next
+      </button>
     </div>
   );
 };

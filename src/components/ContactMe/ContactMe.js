@@ -17,8 +17,8 @@ const ContactMe = () => {
   return (
     <div className="ContactMe"  style={{ position: "absolute", top: window.innerHeight*3 }}>
       <h4>Contact Me</h4>
-      <button onClick={back}>Back</button>
-      <button onClick={toTop}>Scroll To Top</button>
+      <button className="next-back-btn" onClick={back}>Back</button>
+      <button className="next-back-btn" onClick={toTop}>Scroll To Top</button>
 
     </div>
   );

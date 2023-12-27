@@ -20,7 +20,9 @@ const HomePage = () => {
         <h3>Full Stack Web Developer</h3>
         <img src={cat} />
         <div className="img-div">
-          <button onClick={nextPage}>Next</button>
+          <button className="next-back-btn" onClick={nextPage}>
+            Next
+          </button>
           {/* <img src={downchevron} /> */}
         </div>
       </div>
