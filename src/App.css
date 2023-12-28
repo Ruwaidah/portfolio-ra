@@ -17,4 +17,6 @@
   border-radius: 10px;
   outline: none;
   font-weight: bold;
+  margin: 40px 0;
+  box-sizing: border-box;
 }

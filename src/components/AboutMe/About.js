@@ -9,6 +9,7 @@ const About = () => {
   };
 
   const next = () => {
+    console.log(window.innerHeight)
     window.scrollBy({
       top: window.innerHeight,
       behavior: "smooth",

@@ -1,14 +1,41 @@
 .HomePage {
   position: relative;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.914);
   height: 400vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.HomePage .HomePage-div .name-logos {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.HomePage .HomePage-div .name-logos .headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 12vh;
+}
+
+.HomePage .HomePage-div .logos-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HomePage .HomePage-div .logos-img img {
+  width: 80px;
+  height: 80px;
+}
+
 .HomePage .HomePage-div {
   height: 100vh;
+  width: 100%;
   padding: 20px 0;
   box-sizing: border-box;
   display: flex;
@@ -17,15 +44,15 @@
   align-items: center;
 }
 
+.HomePage .HomePage-div h1 {
+  margin: 0;
+}
+
 .HomePage .HomePage-div img {
   width: 200px;
 }
 
-
-
-
-.HomePage .HomePage-div button:hover {
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
+.HomePage .btns-div {
+  position: fixed;
+  bottom: 0;
 }
