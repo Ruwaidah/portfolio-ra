@@ -1,19 +1,7 @@
 import "./Projects.css";
 
 const Projects = () => {
-  const back = () => {
-    window.scrollBy({
-      top: -window.innerHeight,
-      behavior: "smooth",
-    });
-  };
 
-  const next = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div
@@ -21,12 +9,6 @@ const Projects = () => {
       style={{ position: "absolute", top: window.innerHeight * 2 }}
     >
       <h2>Projects</h2>
-      <button className="next-back-btn" onClick={back}>
-        Back
-      </button>
-      <button className="next-back-btn" onClick={next}>
-        Next
-      </button>
     </div>
   );
 };

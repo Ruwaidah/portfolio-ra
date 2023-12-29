@@ -1,26 +1,11 @@
 import "./About.css";
 
 const About = () => {
-  const back = () => {
-    window.scrollBy({
-      top: -window.innerHeight,
-      behavior: "smooth",
-    });
-  };
-
-  const next = () => {
-    console.log(window.innerHeight)
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
   return (
     <div
       className="About"
       style={{ position: "absolute", top: window.innerHeight }}
     >
-      <button className="next-back-btn" onClick={back}>Back</button>
       <div>
         <h2>About</h2>
         <p>
@@ -39,7 +24,6 @@ const About = () => {
           development.
         </p>
       </div>{" "}
-      <button className="next-back-btn" onClick={next}>Next</button>
     </div>
   );
 };
