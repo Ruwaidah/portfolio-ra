@@ -3,8 +3,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: black;
+  justify-content: center;
+  color: white;
   align-items: center;
 }
 
@@ -12,19 +12,15 @@
   margin: 20px 0 0 0;
 }
 
-.About div {
+.About  {
   width: 90%;
-  box-shadow: 0 4px 8px 0 rgb(174, 174, 174), 0 6px 20px 0 rgb(179, 179, 179);
+  /* box-shadow: 0 4px 8px 0 rgb(174, 174, 174), 0 6px 20px 0 rgb(179, 179, 179); */
   border-radius: 10px;
-  background-color: rgba(255, 255, 255,1);
+  /* background-color: rgba(255, 255, 255,1); */
 }
 
-.About div p {
-  text-align: center;
+.About  p {
+  text-align: justify;
   margin: 10px 20px 40px;
 }
 
-.About  button {
-
-
-}
