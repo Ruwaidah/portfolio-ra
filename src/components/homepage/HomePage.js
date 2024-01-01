@@ -8,69 +8,36 @@ import js from "../../images/js.png";
 import react from "../../images/react.png";
 import python from "../../images/python.png";
 import nodejs from "../../images/nodejs.png";
+import NavBar from "../NavBar/NavBar.js";
 
 const HomePage = () => {
-  const nextPage = (page) => {
-    switch (page) {
-      case "home":
-        return window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      case "about":
-        return window.scrollTo({
-          top: window.innerHeight,
-          behavior: "smooth",
-        });
-      case "projects":
-        return window.scrollTo({
-          top: window.innerHeight * 2,
-          behavior: "smooth",
-        });
-      case "contact":
-        return window.scrollTo({
-          top: window.innerHeight * 3,
-          behavior: "smooth",
-        });
-    }
+  const getNumber = (min, max) => {
+    console.log(window.innerWidth, min, max);
+    return Math.floor(Math.random() * (max - min)) + min;
   };
+
+  console.log(window.innerWidth);
 
   return (
     <div className="HomePage" id="homepage">
       <div className="HomePage-div">
-        <div className="name-logos">
-          <div className="headers">
-            <h1>Ruwaidah Alfakhri</h1>
-            <h3>Full Stack Web Developer</h3>
-          </div>{" "}
-          <div className="logos-img">
-            <img src={html} />
-            <img src={css} />
-            <img src={js} />
-            <img src={react} />
-            <img src={python} />
-            <img src={nodejs} />
-          </div>{" "}
-        </div>
+        <div className="headers">
+          <h1>Ruwaidah Alfakhri</h1>
+          <h3>Full Stack Web Developer</h3>
+        </div>{" "}
+        <div className="logos-img">
+          <img src={html} />
+          <img src={css} />
+          <img src={js} />
+          <img src={react} />
+          <img src={python} />
+          <img src={nodejs} />
+        </div>{" "}
       </div>
       <About />
       <Projects />
       <ContactMe />
-
-      <div className="btns-div">
-        <button className="next-back-btn" onClick={() => nextPage("home")}>
-          Home
-        </button>
-        <button className="next-back-btn" onClick={() => nextPage("about")}>
-          about
-        </button>
-        <button className="next-back-btn" onClick={() => nextPage("projects")}>
-          Projects
-        </button>
-        <button className="next-back-btn" onClick={() => nextPage("contact")}>
-          Contact
-        </button>
-      </div>
+      <NavBar />
     </div>
   );
 };
