@@ -5,14 +5,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.Projects h2 {
+  margin-bottom: 20px;
 }
 
 .Projects .project-temp {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 70%;
+  width: 90%;
+  margin-bottom: 60px;
+}
+
+.Projects .project-temp h4 {
+  margin-bottom: 10px;
 }
 
 .Projects .project-temp div {
@@ -21,4 +30,8 @@
 
 .Projects .project-temp img {
   width: 200px;
+}
+
+.Projects .project-temp ul li {
+  text-align: start;
 }

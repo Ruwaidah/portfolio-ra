@@ -7,13 +7,21 @@ const Boo = () => {
       <h4>Boo</h4>
       <div>
         <img src={boo} />
-        <p>
-          Search for and display pet listings based on pet characteristics,
-          location, and status. Search for and display animal welfare
-          organizations based on organization name, ID, and location. display
-          profiles of local organizations. Help users find their perfect pets by
-          location, breed, and other characteristics.
-        </p>
+        <ul>
+          <li>
+            Search for and display pet listings based on pet characteristics,
+            location, and status.
+          </li>
+          <li>
+            Search for and display animal welfare organizations based on
+            organization name, ID, and location. display profiles of local
+            organizations.
+          </li>
+          <li>
+            Help users find their perfect pets by location, breed, and other
+            characteristics.
+          </li>
+        </ul>
       </div>
     </div>
   );
