@@ -24,8 +24,11 @@
   color: rgb(157, 171, 255);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
+  .NavBar {
+    width: 100%;
+  }
   .NavBar button {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

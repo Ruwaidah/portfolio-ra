@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 90%;
+  width: 70%;
   margin-bottom: 60px;
 }
 
@@ -34,4 +34,26 @@
 
 .Projects .project-temp ul li {
   text-align: start;
+}
+
+.Projects .project-temp ul li a {
+  text-decoration: none;
+  color: rgb(253, 236, 152);
+}
+
+
+@media (max-width: 1500px) {
+.Projects {
+  width: 94%;
+}
+
+.Projects h2 {
+  margin-bottom: 10px;
+}
+
+.Projects .project-temp {
+  width: 100%;
+  margin-bottom: 40px;
+
+}
 }

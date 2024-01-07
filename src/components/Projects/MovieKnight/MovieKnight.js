@@ -7,6 +7,8 @@ const MovieKnight = () => {
       <div>
         <img src={movieKnight} />
         <ul>
+          <li>Front end built using React.</li>
+          <li>Back end built using Node.js and Express.</li>
           <li>
             displays movies showing in theaters within the zip code you've
             search for.
@@ -24,8 +26,36 @@ const MovieKnight = () => {
           <li>
             used Jest and React-Testing-Library to test our front end code.
           </li>
-          <li>Front end built using React.</li>
-          <li>Back end built using Node.js and Express.</li>
+          <li>
+            Link to the Github:
+            <a
+              href="https://github.com/Ruwaidah/movie_knight_be"
+              target="_blank"
+            >
+              {" "}
+              Back end
+            </a>
+          </li>
+          <li>
+            {" "}
+            Link to the Github:{" "}
+            <a
+              href="https://github.com/Ruwaidah/movie-knight-fe"
+              target="_blank"
+            >
+              {" "}
+              Front end{" "}
+            </a>
+          </li>
+
+          <li>
+            {" "}
+            Link to the App:{" "}
+            <a href="https://movieknight.onrender.com/" target="_blank">
+              {" "}
+              MoviKnight Website{" "}
+            </a>
+          </li>
         </ul>
       </div>
     </div>

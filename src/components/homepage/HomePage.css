@@ -25,9 +25,6 @@
   margin-bottom: 40px;
 }
 
-
-
-
 .HomePage .HomePage-div .logos-img {
   display: flex;
   align-items: center;
@@ -36,16 +33,16 @@
   border-top: 1px solid white;
 }
 
-
 .HomePage .HomePage-div .logos-img img {
   width: 60px;
   height: 60px;
   margin: 20px;
 }
 
-
-
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
+  .HomePage {
+    width: 100%;
+  }
   .HomePage .HomePage-div .headers {
     margin-bottom: 20px;
   }
