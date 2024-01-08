@@ -2,7 +2,7 @@ import "./MovieKnight.css";
 import movieKnight from "../../../images/movieKnight.png";
 const MovieKnight = () => {
   return (
-    <div className="project-temp movieknight">
+    <div className="project-temp movieknight-proj">
       <h4>Movie Knight</h4>
       <div>
         <img src={movieKnight} />
