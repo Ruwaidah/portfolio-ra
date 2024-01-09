@@ -1,8 +1,11 @@
 import "./MovieKnight.css";
 import movieKnight from "../../../images/movieKnight.png";
-const MovieKnight = () => {
+const MovieKnight = (props) => {
   return (
-    <div className="project-temp movieknight-proj">
+    <div
+      className="project-temp movieknight-proj"
+      id={props.isMovie ? "showMovie" : null}
+    >
       <h4>Movie Knight</h4>
       <div>
         <img src={movieKnight} />

@@ -28,7 +28,7 @@ const Projects = () => {
         </button>
       </div>
       <Boo isBoo={isBoo} />
-      <MovieKnight />
+      <MovieKnight isMovie={isMovie} />
     </div>
   );
 };

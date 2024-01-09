@@ -61,3 +61,13 @@
     height: 50px;
   }
 }
+
+@media (max-width: 550px) {
+  .HomePage .HomePage-div .logos-img {
+    flex-direction: column;
+    border: none;
+  }
+  .HomePage .HomePage-div .logos-img img {
+    margin: 10px;
+  }
+}

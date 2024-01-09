@@ -61,6 +61,9 @@
 }
 
 @media (max-width: 800px) {
+  .Projects h2 {
+    display: none;
+  }
   .Projects .projects-btns {
     display: block;
     display: flex;
@@ -71,11 +74,11 @@
 
   .Projects .projects-btns button {
     width: 320px;
-    height: 60px;
+    height: 54px;
     margin-bottom: 20px;
     border: none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 1.1rem;
     background-color: rgb(255, 240, 222);
   }
@@ -85,11 +88,26 @@
   .Projects .projects-btns button:hover {
     background-color: rgb(255, 255, 147);
   }
-  #showBoo {
+  #showBoo,
+  #showMovie {
     display: flex;
+    opacity: 0;
+    animation: fadeIn forwards 6s;
   }
 
+  #showBoo div {
+    flex-direction: column;
+  }
   #hideBtn {
     display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

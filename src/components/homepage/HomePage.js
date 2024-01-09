@@ -26,12 +26,16 @@ const HomePage = () => {
           <h3>Full Stack Web Developer</h3>
         </div>{" "}
         <div className="logos-img">
-          <img src={html} />
-          <img src={css} />
-          <img src={js} />
-          <img src={react} />
-          <img src={python} />
-          <img src={nodejs} />
+          <div>
+            <img src={html} />
+            <img src={css} />
+            <img src={js} />
+          </div>
+          <div>
+            <img src={react} />
+            <img src={python} />
+            <img src={nodejs} />
+          </div>
         </div>{" "}
       </div>
       <About />
