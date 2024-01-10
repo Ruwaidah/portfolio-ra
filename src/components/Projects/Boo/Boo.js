@@ -2,9 +2,9 @@ import boo from "../../../images/Boo.png";
 import "./Boo.css";
 
 const Boo = (props) => {
-  console.log(props.isBoo)
+  console.log(props.isBoo);
   return (
-    <div id={props.isBoo? `showBoo` :  null} className="project-temp Boo-proj">
+    <div id={props.isBoo ? `showBoo` : null} className="project-temp Boo-proj">
       <h4>Boo</h4>
       <div>
         <img src={boo} />
@@ -27,23 +27,29 @@ const Boo = (props) => {
             Link to the Github:{" "}
             <a href="https://github.com/Ruwaidah/boo" target="_blank">
               Front end
-            </a>.
+            </a>
+            .
           </li>
           <li>
             {" "}
             Link to the Github:{" "}
             <a href="https://github.com/Ruwaidah/boo-server" target="_blank">
               Back end
-            </a>.
+            </a>
+            .
           </li>
           <li>
             {" "}
             Link to the App:{" "}
             <a href="https://boo-7emc.onrender.com/" target="_blank">
               Boo Website
-            </a>.
+            </a>
+            .
           </li>
         </ul>
+        <button className="cancel-btn" onClick={() => props.setIsBoo(false)}>
+          Cancel
+        </button>
       </div>
     </div>
   );

@@ -12,14 +12,28 @@
 
 .About p {
   text-align: justify;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 
 @media (max-width: 1500px) {
-
-  
   .About {
     width: 98%;
+  }
+
+  @media (max-width: 800px) {
+    .About {
+      width: 100%;
+    }
+
+    .About h2 {
+
+      font-size: 1.2rem;
+          }
+    .About p {
+
+font-size: 0.8rem;
+    }
+    
   }
 }

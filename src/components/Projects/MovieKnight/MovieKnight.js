@@ -60,6 +60,7 @@ const MovieKnight = (props) => {
             </a>
           </li>
         </ul>
+        <button className="cancel-btn" onClick={() => props.setIsMovie(false)}>Cancel</button>
       </div>
     </div>
   );
