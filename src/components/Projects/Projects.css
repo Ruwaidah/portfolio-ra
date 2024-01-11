@@ -153,6 +153,7 @@
     border: none;
     border-radius: 4px;
     outline: none;
+    color: black;
   }
   #hideBtn {
     display: none;
