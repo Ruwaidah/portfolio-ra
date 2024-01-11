@@ -10,8 +10,7 @@ const MovieKnight = (props) => {
       <div>
         <img src={movieKnight} />
         <ul>
-          <li>Front end built using React.</li>
-          <li>Back end built using Node.js and Express.</li>
+          <li>Front end built using React and the Back end built using Node.js and Express. </li>
           <li>
             displays movies showing in theaters within the zip code you've
             search for.
@@ -25,9 +24,6 @@ const MovieKnight = (props) => {
           </li>
           <li>
             filters available movies that match those preferences for the user.
-          </li>
-          <li>
-            used Jest and React-Testing-Library to test our front end code.
           </li>
           <li>
             Link to the Github:

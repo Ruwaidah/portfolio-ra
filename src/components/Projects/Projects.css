@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .Projects .projects-btns {
   display: none;
 }
@@ -53,11 +52,9 @@
   .Projects {
     width: 94%;
   }
-
   .Projects h2 {
     margin-bottom: 10px;
   }
-
   .Projects .project-temp {
     width: 100%;
     margin-bottom: 40px;
@@ -71,7 +68,6 @@
   .Projects {
     justify-content: center;
     width: 98%;
-
   }
   .Projects .projects-btns {
     display: block;
@@ -89,7 +85,8 @@
     outline: none;
     border-radius: 4px;
     font-size: 1rem;
-    background-color: rgb(255, 240, 222);
+    background-color: rgb(252, 248, 243);
+    font-weight: bold;
   }
   .Projects .project-temp {
     display: none;
@@ -106,7 +103,7 @@
     align-items: center;
   }
 
-  #showMovie  {
+  #showMovie {
     height: 100vh;
     margin-top: 20px;
   }
@@ -129,7 +126,7 @@
     width: 100%;
   }
 
-    #showMovie div  ul li,
+  #showMovie div ul li,
   #showBoo div ul li {
     font-size: 0.8rem;
   }
@@ -139,6 +136,11 @@
     height: 200px;
   }
 
+  #showMovie div img {
+    width: 200px;
+    height: 280px;
+  }
+  
   #showMovie .cancel-btn,
   #showBoo .cancel-btn {
     display: flex;
