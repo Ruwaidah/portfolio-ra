@@ -68,8 +68,7 @@
   .Projects {
     justify-content: center;
     width: 98%;
-    height: 100vh;
-
+    height: 80vh;
   }
   .Projects .projects-btns {
     display: block;
@@ -143,7 +142,7 @@
     width: 200px;
     height: 280px;
   }
-  
+
   #showMovie .cancel-btn,
   #showBoo .cancel-btn {
     display: flex;

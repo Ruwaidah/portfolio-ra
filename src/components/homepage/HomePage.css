@@ -62,6 +62,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .HomePage .HomePage-div {
+    height: 80vh;
+  }
+}
+
 @media (max-width: 550px) {
   .HomePage .HomePage-div .logos-img {
     flex-direction: column;

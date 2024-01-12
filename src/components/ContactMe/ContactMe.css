@@ -21,10 +21,14 @@
   padding-right: 10px;
 }
 
-
 .ContactMe .github-linkedin {
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .ContactMe {
+    height: 80vh;
+  }
 }

@@ -24,6 +24,7 @@
   @media (max-width: 800px) {
     .About {
       width: 100%;
+      height: 80vh;
     }
 
     .About h2 {
