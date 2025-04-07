@@ -2,16 +2,23 @@ import { useState } from "react";
 import Boo from "./Boo/Boo";
 import MovieKnight from "./MovieKnight/MovieKnight";
 import "./Projects.css";
+import HashChat from "./HashChat/HashChat";
 
 const Projects = () => {
   const [isBoo, setIsBoo] = useState(false);
   const [isMovie, setIsMovie] = useState(false);
+  const [isHashChat, setIsHashChat] = useState(false);
+
   const showBoo = () => {
     setIsBoo(true);
   };
 
   const showMovie = () => {
     setIsMovie(true);
+  };
+
+  const showHashChat = () => {
+    setIsHashChat(true);
   };
   return (
     <div
@@ -20,14 +27,18 @@ const Projects = () => {
     >
       <h2>Projects</h2>
       <div className="projects-btns" id={isBoo || isMovie ? "hideBtn" : null}>
+        <button className="movie-btn" onClick={showHashChat}>
+          HashChat
+        </button>
         <button className="boo-btn" onClick={showBoo}>
-          Boo Project
+          Boo
         </button>
         <button className="movie-btn" onClick={showMovie}>
-          MovieKnight Project
+          MovieKnight
         </button>
       </div>
-      <Boo isBoo={isBoo} setIsBoo={setIsBoo}/>
+      <HashChat isHashChat={isHashChat} setIsHashChat={setIsHashChat} />
+      <Boo isBoo={isBoo} setIsBoo={setIsBoo} />
       <MovieKnight isMovie={isMovie} setIsMovie={setIsMovie} />
     </div>
   );

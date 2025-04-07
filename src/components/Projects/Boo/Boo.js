@@ -2,7 +2,6 @@ import boo from "../../../images/Boo.png";
 import "./Boo.css";
 
 const Boo = (props) => {
-  console.log(props.isBoo);
   return (
     <div id={props.isBoo ? `showBoo` : null} className="project-temp Boo-proj">
       <h4>Boo</h4>
