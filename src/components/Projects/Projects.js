@@ -20,13 +20,14 @@ const Projects = () => {
   const showHashChat = () => {
     setIsHashChat(true);
   };
+  console.log(window.innerHeight);
   return (
     <div
       className="Projects"
-      style={{ position: "absolute", top: window.innerHeight * 2 }}
+      // style={{ position: "absolute", top: window.innerHeight * 2 + 180 }}
     >
       <h2>Projects</h2>
-      <div className="projects-btns" id={isBoo || isMovie ? "hideBtn" : null}>
+      {/* <div className="projects-btns" id={isBoo || isMovie ? "hideBtn" : null}>
         <button className="movie-btn" onClick={showHashChat}>
           HashChat
         </button>
@@ -36,10 +37,10 @@ const Projects = () => {
         <button className="movie-btn" onClick={showMovie}>
           MovieKnight
         </button>
-      </div>
-      <HashChat isHashChat={isHashChat} setIsHashChat={setIsHashChat} />
-      <Boo isBoo={isBoo} setIsBoo={setIsBoo} />
-      <MovieKnight isMovie={isMovie} setIsMovie={setIsMovie} />
+      </div> */}
+      <HashChat />
+      <Boo  />
+      <MovieKnight />
     </div>
   );
 };

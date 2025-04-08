@@ -4,13 +4,17 @@ const MovieKnight = (props) => {
   return (
     <div
       className="project-temp movieknight-proj"
-      id={props.isMovie ? "showMovie" : null}
+      // id={props.isMovie ? "showMovie" : null}
     >
-      <h4>Movie Knight</h4>
       <div>
         <img src={movieKnight} />
+        <h4>Movie Knight</h4>
+
         <ul>
-          <li>Front end built using React and the Back end built using Node.js and Express. </li>
+          <li>
+            Front end built using React and the Back end built using Node.js and
+            Express.{" "}
+          </li>
           <li>
             displays movies showing in theaters within the zip code you've
             search for.
@@ -56,7 +60,7 @@ const MovieKnight = (props) => {
             </a>
           </li>
         </ul>
-        <button className="cancel-btn" onClick={() => props.setIsMovie(false)}>Cancel</button>
+        {/* <button className="cancel-btn" onClick={() => props.setIsMovie(false)}>Cancel</button> */}
       </div>
     </div>
   );

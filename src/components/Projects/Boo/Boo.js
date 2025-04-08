@@ -1,12 +1,13 @@
 import boo from "../../../images/Boo.png";
 import "./Boo.css";
 
-const Boo = (props) => {
+const Boo = () => {
   return (
-    <div id={props.isBoo ? `showBoo` : null} className="project-temp Boo-proj">
-      <h4>Boo</h4>
+    <div className="project-temp" id="Boo-proj">
       <div>
         <img src={boo} />
+        <h4>Boo</h4>
+
         <ul>
           <li>
             Search for and display pet listings based on pet characteristics,
@@ -46,9 +47,9 @@ const Boo = (props) => {
             .
           </li>
         </ul>
-        <button className="cancel-btn" onClick={() => props.setIsBoo(false)}>
+        {/* <button className="cancel-btn" onClick={() => props.setIsBoo(false)}>
           Cancel
-        </button>
+        </button> */}
       </div>
     </div>
   );

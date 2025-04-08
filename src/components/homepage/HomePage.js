@@ -8,11 +8,9 @@ import js from "../../images/js.png";
 import react from "../../images/react.png";
 import python from "../../images/python.png";
 import nodejs from "../../images/nodejs.png";
-import NavBar from "../NavBar/NavBar.js";
 
 const HomePage = () => {
   const getNumber = (min, max) => {
-    console.log(window.innerWidth, min, max);
     return Math.floor(Math.random() * (max - min)) + min;
   };
 
@@ -41,7 +39,7 @@ const HomePage = () => {
       <About />
       <Projects />
       <ContactMe />
-      <NavBar />
+      {/* <NavBar /> */}
     </div>
   );
 };

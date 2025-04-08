@@ -1,11 +1,12 @@
 .About {
-  height: 90vh;
+  /* height: 90vh; */
   width: 42%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
   align-items: center;
+  height: 100vh;
 }
 
 .About p {
@@ -20,6 +21,8 @@
 @media (max-width: 1500px) {
   .About {
     width: 98%;
+    height: 100vh;
+
   }
 
   @media (max-width: 800px) {

@@ -6,7 +6,7 @@ const ContactMe = () => {
   return (
     <div
       className="ContactMe"
-      style={{ position: "absolute", top: window.innerHeight * 3 }}
+      // style={{ position: "absolute", top: window.innerHeight * 3 }}
     >
       <div className="email-div">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" />

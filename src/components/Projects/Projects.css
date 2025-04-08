@@ -1,6 +1,6 @@
 .Projects {
-  height: 100vh;
-  width: 70%;
+  /* height: 100vh; */
+  /* width: 70%; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,8 @@
 
 .Projects h2 {
   margin-bottom: 20px;
+  width: 100%;
+  text-align: start;
 }
 
 .Projects .project-temp {
@@ -22,21 +24,31 @@
   justify-content: flex-start;
   width: 70%;
   margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid whitesmoke;
 }
-.Projects .project-temp .cancel-btn {
+/* .Projects .project-temp .cancel-btn {
   display: none;
-}
+} */
 
 .Projects .project-temp h4 {
   margin-bottom: 10px;
+  width: 100%;
+  text-align: start;
 }
 
 .Projects .project-temp div {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Projects .project-temp img {
   width: 200px;
+}
+
+.Projects .project-temp ul {
+  padding: 0;
 }
 
 .Projects .project-temp ul li {
@@ -49,7 +61,7 @@
 }
 
 @media (max-width: 1500px) {
-  .Projects {
+  /* .Projects {
     width: 94%;
   }
   .Projects h2 {
@@ -96,17 +108,17 @@
   }
   .Projects .projects-btns button:hover {
     background-color: rgb(255, 255, 147);
-  }
-  #showBoo,
+  } */
+  /* #showBoo,
   #showMovie {
     display: flex;
     opacity: 0;
     animation: fadeIn forwards 4s;
     margin: 0;
     align-items: center;
-  }
+  } */
 
-  #showMovie {
+  /* #showMovie {
     height: 100vh;
     margin-top: 20px;
   }
@@ -127,9 +139,9 @@
     align-items: center;
     font-size: 1rem;
     width: 100%;
-  }
+  } */
 
-  #showMovie div ul li,
+  /* #showMovie div ul li,
   #showBoo div ul li {
     font-size: 0.8rem;
   }
@@ -142,9 +154,9 @@
   #showMovie div img {
     width: 200px;
     height: 280px;
-  }
+  } */
 
-  #showMovie .cancel-btn,
+  /* #showMovie .cancel-btn,
   #showBoo .cancel-btn {
     display: flex;
     align-items: center;
@@ -157,7 +169,7 @@
     border-radius: 4px;
     outline: none;
     color: black;
-  }
+  } */
   #hideBtn {
     display: none;
   }

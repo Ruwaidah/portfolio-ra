@@ -4,12 +4,13 @@ import "./HashChat.css";
 const HashChat = (props) => {
   return (
     <div
-      id={props.isHashChat ? `showBoo` : null}
+      // id={props.isHashChat ? `showBoo` : null}
       className="project-temp Boo-proj"
     >
-      <h4>HashChat</h4>
       <div>
         <img src={hashChat} />
+        <h4>HashChat</h4>
+
         <ul>
           <li>
             Chat messaging of real-time digital communication that allows users
@@ -48,12 +49,12 @@ const HashChat = (props) => {
             .
           </li>
         </ul>
-        <button
+        {/* <button
           className="cancel-btn"
           onClick={() => props.setIsHashChat(false)}
         >
           Cancel
-        </button>
+        </button> */}
       </div>
     </div>
   );

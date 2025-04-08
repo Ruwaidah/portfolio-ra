@@ -1,10 +1,11 @@
 import "./About.css";
 
 const About = () => {
+  console.log(window.innerHeight)
   return (
     <div
       className="About"
-      style={{ position: "absolute", top: window.innerHeight }}
+      // style={{ position: "absolute", top: window.innerHeight }}
     >
       <p>
       <h2>About</h2>
