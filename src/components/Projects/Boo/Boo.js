@@ -1,7 +1,7 @@
 import boo from "../../../images/Boo.png";
 import "./Boo.css";
 
-const Boo = () => {
+const Boo = (props) => {
   return (
     <div className="project-temp" id="Boo-proj">
       <div>
@@ -47,9 +47,12 @@ const Boo = () => {
             .
           </li>
         </ul>
-        {/* <button className="cancel-btn" onClick={() => props.setIsBoo(false)}>
+        <button
+          className="cancel-btn"
+          onClick={() => props.setViewProject(null)}
+        >
           Cancel
-        </button> */}
+        </button>
       </div>
     </div>
   );

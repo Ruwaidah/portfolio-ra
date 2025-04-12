@@ -49,12 +49,12 @@ const HashChat = (props) => {
             .
           </li>
         </ul>
-        {/* <button
+        <button
           className="cancel-btn"
-          onClick={() => props.setIsHashChat(false)}
+          onClick={() => props.setViewProject(null)}
         >
           Cancel
-        </button> */}
+        </button>
       </div>
     </div>
   );

@@ -1,15 +1,12 @@
 import "./About.css";
 
 const About = () => {
-  console.log(window.innerHeight)
+  console.log(window.innerHeight);
   return (
-    <div
-      className="About"
-      // style={{ position: "absolute", top: window.innerHeight }}
-    >
-      <p>
+    <div className="About">
       <h2>About</h2>
 
+      <p>
         {" "}
         Dynamic Digital Team Leader at Walmart with a proven track record in
         enhancing team productivity and customer satisfaction. Skilled in

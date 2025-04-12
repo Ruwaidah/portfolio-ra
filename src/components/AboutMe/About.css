@@ -1,41 +1,13 @@
 .About {
-  /* height: 90vh; */
-  width: 42%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  color: white;
-  align-items: center;
-  height: 100vh;
-}
-
-.About p {
+  width: 90%;
   text-align: justify;
-  padding: 10px;
 }
 
 .About h2 {
+  margin: 0;
+  width: 100%;
   text-align: center;
-}
-
-@media (max-width: 1500px) {
-  .About {
-    width: 98%;
-    height: 100vh;
-
-  }
-
-  @media (max-width: 800px) {
-    .About {
-      width: 100%;
-      height: 80vh;
-    }
-
-    .About h2 {
-      font-size: 1.2rem;
-    }
-    .About p {
-      font-size: 0.8rem;
-    }
-  }
 }

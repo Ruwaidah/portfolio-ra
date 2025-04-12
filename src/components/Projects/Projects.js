@@ -1,25 +1,14 @@
 import { useState } from "react";
 import Boo from "./Boo/Boo";
+import boo from "../../images/Boo.png";
+import movieKnight from "../../images/movieKnight.png";
 import MovieKnight from "./MovieKnight/MovieKnight";
+import hashChat from "../../images/hashchat.png";
 import "./Projects.css";
 import HashChat from "./HashChat/HashChat";
 
 const Projects = () => {
-  const [isBoo, setIsBoo] = useState(false);
-  const [isMovie, setIsMovie] = useState(false);
-  const [isHashChat, setIsHashChat] = useState(false);
-
-  const showBoo = () => {
-    setIsBoo(true);
-  };
-
-  const showMovie = () => {
-    setIsMovie(true);
-  };
-
-  const showHashChat = () => {
-    setIsHashChat(true);
-  };
+  const [viewProject, setViewProject] = useState(null);
   console.log(window.innerHeight);
   return (
     <div
@@ -27,20 +16,44 @@ const Projects = () => {
       // style={{ position: "absolute", top: window.innerHeight * 2 + 180 }}
     >
       <h2>Projects</h2>
-      {/* <div className="projects-btns" id={isBoo || isMovie ? "hideBtn" : null}>
-        <button className="movie-btn" onClick={showHashChat}>
-          HashChat
-        </button>
-        <button className="boo-btn" onClick={showBoo}>
-          Boo
-        </button>
-        <button className="movie-btn" onClick={showMovie}>
-          MovieKnight
-        </button>
-      </div> */}
-      <HashChat />
-      <Boo  />
-      <MovieKnight />
+      {!viewProject && (
+        <div className="projects-views">
+          <div className="project-card">
+            <img src={boo} />
+            <div>
+              <p>Boo</p>
+              <button onClick={() => setViewProject("boo")}>
+                View more...
+              </button>
+            </div>{" "}
+          </div>
+          <div className="project-card">
+            <img src={movieKnight} />
+            <div>
+              <p>MovieKnight</p>
+              <button onClick={() => setViewProject("movieKnight")}>
+                View more...
+              </button>
+            </div>
+          </div>
+          <div className="project-card">
+            <img src={hashChat} />
+            <div>
+              <p>HashChat</p>
+              <button onClick={() => setViewProject("hashChat")}>
+                View more...
+              </button>
+            </div>{" "}
+          </div>
+        </div>
+      )}
+      {viewProject === "hashChat" && (
+        <HashChat setViewProject={setViewProject} />
+      )}
+      {viewProject === "boo" && <Boo setViewProject={setViewProject} />}
+      {viewProject === "movieKnight" && (
+        <MovieKnight setViewProject={setViewProject} />
+      )}
     </div>
   );
 };
