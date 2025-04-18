@@ -1,13 +1,8 @@
 .HomePage {
-  /* @media (max-width: 800px) {
-
-  } */
   margin: 0 auto;
-  /* background-color: rgb(46, 46, 46); */
   background-color: #eae0d5;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   box-shadow: 1px 10px 10px 2px rgb(116, 108, 82);
 }
@@ -15,7 +10,6 @@
 .HomePage .HomePage-div .headers h1 {
   /* color: rgb(243, 245, 244); */
   color: #22333b;
-
 }
 
 .HomePage .HomePage-div .headers h3 {
@@ -30,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .headers {
@@ -47,4 +45,8 @@
   width: 50px;
   height: 50px;
   margin-left: 8px;
+
+  @media screen and (max-width: 360px) {
+    width: 60px
+  }
 }

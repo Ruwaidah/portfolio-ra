@@ -7,7 +7,6 @@
   width: 100%;
   text-align: start;
   margin-bottom: 40px;
-  /* color: rgb(255, 255, 255); */
   color: #5e503f;
 }
 
@@ -23,8 +22,14 @@
   display: flex;
   flex-direction: column;
   width: 32%;
-  margin: 0 2px;
+  margin: 6px 2px;
   position: relative;
+  @media screen and (max-width: 450px) {
+    justify-content: space-evenly;
+    width: 48%;
+  }
+
+
 }
 
 .Projects .projects-views .project-card img {
@@ -95,11 +100,20 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 420px) {
+    justify-content: space-between;
+
+  }
 }
 
 .Projects .project-temp .header-img img {
   width: 200px;
   border-radius: 6px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 420px) {
+    width: 48%;
+  }
 }
 
 .project-temp .project-name {
