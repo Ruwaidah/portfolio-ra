@@ -5,7 +5,6 @@ const About = () => {
   return (
     <div className="About">
       <h2>About</h2>
-
       <p>
         {" "}
         Dynamic Digital Team Leader at Walmart with a proven track record in

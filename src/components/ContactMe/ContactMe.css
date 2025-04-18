@@ -1,7 +1,35 @@
 .ContactMe {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ContactMe p {
+  margin: 0;
+  color: #5e503f;
+  font-weight: bold;
+}
+
+.ContactMe .gmail-logo {
+margin: 0;
+}
+
+.ContactMe .email-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-bottom: 10px;
+}
+
+.ContactMe .email-div img {
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
 }
 
 .ContactMe  img {
   width: 40px;
   height: 40px;
+  margin-left: 18px;
 }

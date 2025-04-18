@@ -17,7 +17,7 @@ const HomePage = () => {
       <div className="HomePage-div">
         <div className="headers">
           <h1>Ruwaidah Alfakhri</h1>
-          <h3>Full Stack Web Developer</h3>
+          <h3>Full Stack Web Developer</h3> 
         </div>{" "}
         <div className="logos-img">
           <div>
@@ -34,7 +34,6 @@ const HomePage = () => {
       <About />
       <Projects />
       <ContactMe />
-      {/* <NavBar /> */}
     </div>
   );
 };

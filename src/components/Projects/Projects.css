@@ -1,16 +1,20 @@
 .Projects {
   width: 96%;
+  min-height: 90vh;
 }
 
 .Projects h2 {
   width: 100%;
   text-align: start;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
+  /* color: rgb(255, 255, 255); */
+  color: #5e503f;
 }
 
 .Projects .projects-views {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
@@ -19,25 +23,45 @@
   display: flex;
   flex-direction: column;
   width: 32%;
+  margin: 0 2px;
+  position: relative;
+}
+
+.Projects .projects-views .project-card img {
+  border-radius: 4px;
 }
 
 .Projects .projects-views .project-card div {
-  width: 100%;
+  width: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.8rem;
   margin-top: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.Projects .projects-views .project-card div p,
-.Projects .projects-views .project-card div button {
+.Projects .projects-views .project-card div p {
   margin: 0;
+  color: #22333b;
+  font-size: 1rem;
+  text-align: start;
+  width: 100%;
+  background-color: #eae0d5;
+  outline: none;
+  border: none;
+  border-radius: 0 4px 0 4px;
+  padding-left: 4px;
+  font-weight: bold;
 }
-
+/* 
 .Projects .projects-views .project-card div button {
   text-align: end;
-}
+  color: rgb(219, 218, 123);
+  font-size: 0.9rem;
+} */
 
 .Projects .projects-views div button {
   width: 100px;
@@ -45,7 +69,8 @@
   border: none;
   outline: none;
   margin-top: 10px;
-  color: orange;
+  color: rgb(223, 105, 105);
+
   text-align: start;
 }
 
@@ -56,6 +81,63 @@
 
 .project-temp img {
   width: 260px;
+}
+
+.Projects .project-temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.Projects .project-temp .header-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Projects .project-temp .header-img img {
+  width: 200px;
+  border-radius: 6px;
+}
+
+.project-temp .project-name {
+  text-decoration: none;
+  color: #5e503f;
+  text-align: start;
+  width: 100%;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
+
+.Projects .project-temp ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  color: #5e503f;
+}
+
+.Projects .project-temp ul li {
+  text-align: start;
+}
+
+.Projects .project-temp ul li a {
+  text-decoration: none;
+  color: #22333B;
+}
+
+.Projects .project-temp button {
+  width: 260px;
+  margin-left: 20px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #eae0d5;
+  background-color: #5e503f;
 }
 
 @keyframes fadeIn {

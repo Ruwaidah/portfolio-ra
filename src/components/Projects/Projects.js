@@ -18,31 +18,28 @@ const Projects = () => {
       <h2>Projects</h2>
       {!viewProject && (
         <div className="projects-views">
-          <div className="project-card">
+          <div className="project-card" onClick={() => setViewProject("boo")}>
             <img src={boo} />
             <div>
               <p>Boo</p>
-              <button onClick={() => setViewProject("boo")}>
-                View more...
-              </button>
             </div>{" "}
           </div>
-          <div className="project-card">
+          <div
+            className="project-card"
+            onClick={() => setViewProject("movieKnight")}
+          >
             <img src={movieKnight} />
             <div>
               <p>MovieKnight</p>
-              <button onClick={() => setViewProject("movieKnight")}>
-                View more...
-              </button>
             </div>
           </div>
-          <div className="project-card">
+          <div
+            className="project-card"
+            onClick={() => setViewProject("hashChat")}
+          >
             <img src={hashChat} />
             <div>
               <p>HashChat</p>
-              <button onClick={() => setViewProject("hashChat")}>
-                View more...
-              </button>
             </div>{" "}
           </div>
         </div>

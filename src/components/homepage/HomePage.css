@@ -3,11 +3,24 @@
 
   } */
   margin: 0 auto;
-  background-color: rgb(46, 46, 46);
+  /* background-color: rgb(46, 46, 46); */
+  background-color: #eae0d5;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  box-shadow: 1px 10px 10px 2px rgb(116, 108, 82);
+}
+
+.HomePage .HomePage-div .headers h1 {
+  /* color: rgb(243, 245, 244); */
+  color: #22333b;
+
+}
+
+.HomePage .HomePage-div .headers h3 {
+  /* color: rgb(212, 212, 212); */
+  color: #22333b;
 }
 
 .HomePage-div {
@@ -21,7 +34,7 @@
 
 .headers {
   width: 100%;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #0a0908;
   padding-bottom: 10px;
   margin-bottom: 16px;
 }
