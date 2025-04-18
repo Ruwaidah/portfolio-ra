@@ -1,25 +1,24 @@
 import hashChat from "../../../images/hashchat.png";
-import hashchat01 from "../../../images/hashchat01.png"
-import hashchat02 from "../../../images/hashchat02.png"
+import hashchat01 from "../../../images/hashchat01.png";
+import hashchat02 from "../../../images/hashchat02.png";
 
 import "./HashChat.css";
 
 const HashChat = (props) => {
   return (
-    <div
-      // id={props.isHashChat ? `showBoo` : null}
-      className="project-temp Boo-proj"
-    >
+    <div className="project-temp Boo-proj">
       <div className="header-img">
         <img src={hashChat} />
-        {/* <h4>HashChat</h4> */}
         <img src={hashchat01} />
         <img src={hashchat02} />
-   
       </div>
-      <a className="project-name"  href="https://hashtag-fe-t22k.onrender.com" target="_blank">
-            HashChat
-          </a>
+      <a
+        className="project-name"
+        href="https://hashtag-fe-t22k.onrender.com"
+        target="_blank"
+      >
+        HashChat
+      </a>
       <ul>
         <li>
           Chat messaging of real-time digital communication that allows users to

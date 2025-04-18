@@ -28,8 +28,6 @@
     justify-content: space-evenly;
     width: 48%;
   }
-
-
 }
 
 .Projects .projects-views .project-card img {
@@ -61,12 +59,6 @@
   padding-left: 4px;
   font-weight: bold;
 }
-/* 
-.Projects .projects-views .project-card div button {
-  text-align: end;
-  color: rgb(219, 218, 123);
-  font-size: 0.9rem;
-} */
 
 .Projects .projects-views div button {
   width: 100px;
@@ -103,7 +95,6 @@
 
   @media screen and (max-width: 420px) {
     justify-content: space-between;
-
   }
 }
 
@@ -140,7 +131,7 @@
 
 .Projects .project-temp ul li a {
   text-decoration: none;
-  color: #22333B;
+  color: #22333b;
 }
 
 .Projects .project-temp button {

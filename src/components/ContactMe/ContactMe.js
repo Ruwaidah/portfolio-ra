@@ -7,7 +7,6 @@ const ContactMe = () => {
   return (
     <div
       className="ContactMe"
-      // style={{ position: "absolute", top: window.innerHeight * 3 }}
     >
       <div className="email-div">
         <img

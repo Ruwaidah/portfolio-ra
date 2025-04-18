@@ -12,14 +12,10 @@
 .About h2 {
   margin: 0;
   width: 100%;
-  text-align: center;
-  /* color: rgb(218, 215, 215); */
+  text-align: start;
   color: #5e503f;
-
 }
 
 .About p {
   color: #0a0908;
 }
-
-

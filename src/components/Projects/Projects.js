@@ -11,10 +11,7 @@ const Projects = () => {
   const [viewProject, setViewProject] = useState(null);
   console.log(window.innerHeight);
   return (
-    <div
-      className="Projects"
-      // style={{ position: "absolute", top: window.innerHeight * 2 + 180 }}
-    >
+    <div className="Projects">
       <h2>Projects</h2>
       {!viewProject && (
         <div className="projects-views">

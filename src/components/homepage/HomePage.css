@@ -8,12 +8,10 @@
 }
 
 .HomePage .HomePage-div .headers h1 {
-  /* color: rgb(243, 245, 244); */
   color: #22333b;
 }
 
 .HomePage .HomePage-div .headers h3 {
-  /* color: rgb(212, 212, 212); */
   color: #22333b;
 }
 
@@ -47,6 +45,6 @@
   margin-left: 8px;
 
   @media screen and (max-width: 360px) {
-    width: 60px
+    width: 60px;
   }
 }

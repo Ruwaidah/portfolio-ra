@@ -1,20 +1,15 @@
 import "./MovieKnight.css";
 import movieKnight from "../../../images/movieKnight.png";
-import movieknight01 from "../../../images/movieknight01.png"
-import movieknight02 from "../../../images/movieknight02.png"
+import movieknight01 from "../../../images/movieknight01.png";
+import movieknight02 from "../../../images/movieknight02.png";
 
 const MovieKnight = (props) => {
   return (
-    <div
-      className="project-temp movieknight-proj"
-      // id={props.isMovie ? "showMovie" : null}
-    >
+    <div className="project-temp movieknight-proj">
       <div className="header-img">
         <img src={movieKnight} />
         <img src={movieknight01} />
         <img src={movieknight02} />
-
-        {/* <h4>Movie Knight</h4> */}
       </div>
       <a
         className="project-name"
