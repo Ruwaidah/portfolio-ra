@@ -25,7 +25,7 @@ const HashChat = (props) => {
           send and receive text.
         </li>
         <li>
-          making conversations faster, more accessible, and more engaging.
+          Making conversations faster, more accessible, and more engaging.
         </li>
         <li>Customize your profile with a photo, status, and bio.</li>
         <li>Frontend: HTML, CSS, JavaScript (React.js)</li>

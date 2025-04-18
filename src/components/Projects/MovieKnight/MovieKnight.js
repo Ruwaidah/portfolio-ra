@@ -25,17 +25,17 @@ const MovieKnight = (props) => {
           Express.{" "}
         </li>
         <li>
-          displays movies showing in theaters within the zip code you've search
+          Displays movies showing in theaters within the zip code you've search
           for.
         </li>
         <li>
-          provides more detailed information about each movie if required.
+          Provides more detailed information about each movie if required.
         </li>
         <li>
-          allows users to select their preferences for a movie going experience.
+          Allows users to select their preferences for a movie going experience.
         </li>
         <li>
-          filters available movies that match those preferences for the user.
+          Filters available movies that match those preferences for the user.
         </li>
         <li>
           Link to the Github:
